@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/SondaFlutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Teste/nova-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Teste/nova-api/src/Cappta-Logging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ecommerce-mobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gesior-aac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modular_app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my_portifolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parcele-ja-checkout" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parcele-ja-checkout/src/Cappta-Logging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parceleja-mobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parceleja-mobile-boletos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parceleja-mobile_old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/search_UsersGit_flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/todo_app_android" vcs="Git" />
+  </component>
+</project>
