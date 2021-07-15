@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAppAndroid">
         <activity android:name=".ui.activity.FormStudentActivity"></activity>
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.ListStudentsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
