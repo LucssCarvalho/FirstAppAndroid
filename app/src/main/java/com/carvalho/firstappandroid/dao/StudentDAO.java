@@ -5,7 +5,7 @@ import com.carvalho.firstappandroid.model.Student;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentDao {
+public class StudentDAO {
 
     private final static List<Student> students = new ArrayList<>();
 

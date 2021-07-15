@@ -8,13 +8,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import com.carvalho.firstappandroid.R;
-import com.carvalho.firstappandroid.dao.StudentDao;
-import com.carvalho.firstappandroid.model.Student;
+import com.carvalho.firstappandroid.dao.StudentDAO;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class ListStudentsActivity extends AppCompatActivity {
 
@@ -37,7 +32,7 @@ public class ListStudentsActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        StudentDao dao = new StudentDao();
+        StudentDAO dao = new StudentDAO();
 
         super.onResume();
         ListView listStudents = findViewById(R.id.activity_main_list_students);

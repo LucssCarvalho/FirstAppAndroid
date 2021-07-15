@@ -1,15 +1,14 @@
 package com.carvalho.firstappandroid.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import com.carvalho.firstappandroid.R;
-import com.carvalho.firstappandroid.dao.StudentDao;
+import com.carvalho.firstappandroid.dao.StudentDAO;
 import com.carvalho.firstappandroid.model.Student;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FormStudentActivity extends AppCompatActivity {
 
@@ -18,7 +17,7 @@ public class FormStudentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_student);
 
-        StudentDao dao = new StudentDao();
+        StudentDAO dao = new StudentDAO();
 
         final EditText inputName = findViewById(R.id.activity_form_student_name);
         final EditText inputPhone = findViewById(R.id.activity_form_student_phone);
