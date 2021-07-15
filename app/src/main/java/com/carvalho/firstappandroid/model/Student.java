@@ -15,7 +15,5 @@ public class Student {
 
     @NonNull
     @Override
-    public String toString() {
-        return name;
-    }
+    public String toString() { return name; }
 }
