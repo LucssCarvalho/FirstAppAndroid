@@ -17,7 +17,7 @@ public class Student implements Serializable {
         this.email = email;
     }
 
-    public Student() {
+    public Student(String nome) {
 
     }
 

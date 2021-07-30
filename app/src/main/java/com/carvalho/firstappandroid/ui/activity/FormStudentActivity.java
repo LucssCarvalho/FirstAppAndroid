@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.carvalho.firstappandroid.R;
 import com.carvalho.firstappandroid.dao.StudentDAO;
 import com.carvalho.firstappandroid.model.Student;
+
 import static com.carvalho.firstappandroid.ui.activity.ConstantActivities.KEY_STUDENT;
 
 public class FormStudentActivity extends AppCompatActivity {
@@ -39,9 +42,7 @@ public class FormStudentActivity extends AppCompatActivity {
             setTitle(TITLE_APPBAR_EDIT_STUDENT);
         } else {
             setTitle(TITLE_APPBAR_NEW_STUDENT);
-            student = new Student();
         }
-
     }
 
     private void fillInput() {

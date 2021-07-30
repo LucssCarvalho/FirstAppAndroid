@@ -7,6 +7,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.carvalho.firstappandroid.R;
 import com.carvalho.firstappandroid.dao.StudentDAO;
@@ -28,6 +30,7 @@ public class ListStudentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_students);
         setTitle(TITLE_APPBAR);
         configureFabNewStudent();
+        dao.save(new Student("Lucas Carvalho","119819123","lucas@gmail.com"));
     }
 
     private void configureFabNewStudent() {
@@ -59,6 +62,7 @@ public class ListStudentsActivity extends AppCompatActivity {
     }
 
     private void configListernForAnItem(ListView listStudents) {
+
         listStudents.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
@@ -66,6 +70,16 @@ public class ListStudentsActivity extends AppCompatActivity {
                 openFormForEditStudent(studentSelected);
             }
         });
+
+        listStudents.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+
+                return true;
+            }
+        });
+
+
     }
 
     private void openFormForEditStudent(Student studentSelected) {
